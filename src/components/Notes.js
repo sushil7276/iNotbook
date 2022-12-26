@@ -9,7 +9,12 @@ export const Notes = () => {
 
     useEffect(() => {
         getNotes()
+        // eslint-disable-next-line
     }, [])
+
+    const updateNote = () => {
+
+    }
 
     return (
         <>
@@ -17,7 +22,7 @@ export const Notes = () => {
             <div className="row my-3">
                 <h2>Your Notes</h2>
                 {notes.map((note) => {
-                    return <Noteitem key={note._id} note={note} />;
+                    return <Noteitem key={note._id} updateNote={updateNote} note={note} />;
                 })}
             </div>
         </>

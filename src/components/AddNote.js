@@ -31,6 +31,10 @@ export const AddNote = () => {
                         <label htmlFor="description" className="form-label">Description</label>
                         <input type="text" className="form-control" id="description" name='description' onChange={onChaneg} />
                     </div>
+                    <div className="mb-3">
+                        <label htmlFor="tag" className="form-label">Tag</label>
+                        <input type="text" className="form-control" id="tag" name='tag' onChange={onChaneg} />
+                    </div>
                     <button type="submit" className="btn btn-primary" onClick={handleClick}>Add Note</button>
                 </form>
             </div>
